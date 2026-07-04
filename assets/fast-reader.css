@@ -1,0 +1,42 @@
+.fr-anchor {
+  font-weight: bold;
+}
+
+.fr-disabled .fr-anchor {
+  font-weight: inherit;
+}
+
+.fr-opt-in .fr-anchor {
+  font-weight: inherit;
+}
+
+.fr-opt-in.fast-reader .fr-anchor {
+  font-weight: bold;
+}
+
+#fr-toggle {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+#fr-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+@media print {
+  .fr-anchor {
+    font-weight: inherit;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fr-anchor {
+    font-weight: inherit;
+  }
+}
