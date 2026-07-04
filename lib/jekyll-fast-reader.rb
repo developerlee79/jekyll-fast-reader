@@ -1,0 +1,21 @@
+require "jekyll"
+require "nokogiri"
+require "cgi"
+require "set"
+
+require_relative "jekyll/fast_reader/version"
+require_relative "jekyll/fast_reader/configuration"
+require_relative "jekyll/fast_reader/stop_words"
+require_relative "jekyll/fast_reader/characters"
+require_relative "jekyll/fast_reader/anchor_calculator"
+require_relative "jekyll/fast_reader/tokenizer"
+require_relative "jekyll/fast_reader/text_processor"
+require_relative "jekyll/fast_reader/html_walker"
+require_relative "jekyll/fast_reader/transformer"
+require_relative "jekyll/fast_reader/document_filter"
+require_relative "jekyll/fast_reader/asset_static_file"
+require_relative "jekyll/fast_reader/asset_generator"
+require_relative "jekyll/fast_reader/hooks"
+require_relative "jekyll/fast_reader/liquid_filters"
+
+Jekyll::FastReader::Hooks.register!
