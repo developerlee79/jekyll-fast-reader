@@ -1,0 +1,5 @@
+title: Test Site
+fast_reader:
+  enabled: true
+  collections:
+    - posts
